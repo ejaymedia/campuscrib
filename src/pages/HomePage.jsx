@@ -22,7 +22,6 @@ function HomePage() {
       <FAQSection />
       
       <Footer />
-
     </div>
   )
 }

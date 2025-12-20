@@ -1,10 +1,12 @@
-import './App.css'
-import HomePage from './pages/HomePage'
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/HomePage";
+import HostelDetails from "./pages/HostelDetails";
 
-function App() {
+export default function App() {
   return (
-    <HomePage />
-  )
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/hostel-details" element={<HostelDetails />} />
+    </Routes>
+  );
 }
-
-export default App

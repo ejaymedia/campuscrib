@@ -1,7 +1,10 @@
+import ovly from "../assets/ovly.png";
+
 export default function HeroSection() {
   return (
     <section
       className="
+        relative
         w-full 
         min-h-screen 
         flex 
@@ -17,7 +20,14 @@ export default function HeroSection() {
         overflow-hidden
       "
     >
-      <div className="max-w-3xl flex flex-col items-center">
+      {/* OVERLAY IMAGE */}
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-20 pointer-events-none"
+        style={{ backgroundImage: `url(${ovly})` }}
+      />
+
+      {/* CONTENT */}
+      <div className="relative z-10 max-w-3xl flex flex-col items-center">
         
         <h1 className="text-3xl md:text-5xl font-semibold leading-tight text-gray-900">
           Find Your Ideal Hostel

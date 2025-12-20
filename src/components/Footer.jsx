@@ -1,3 +1,4 @@
+import { HashLink } from "react-router-hash-link";
 import Logo from "../assets/logo.png";
 
 function Footer() {
@@ -7,36 +8,80 @@ function Footer() {
 
         {/* Brand */}
         <div>
-          <img 
-            src={Logo} 
+          <img
+            src={Logo}
             alt="CampusCrib Logo"
-            className="w-40 p-0 md:w-48 mb-4"   // Bigger logo, clean spacing
+            className="w-40 md:w-48 mb-4"
           />
           <p className="text-gray-400 text-sm leading-relaxed">
-            Making student accommodation simple, safe, and stress-free.  
+            Making student accommodation simple, safe, and stress-free.
             Find verified hostels and book with confidence.
           </p>
         </div>
 
         {/* Quick Links */}
         <div>
-          <h4 className="text-lg font-semibold text-white mb-3">Quick Links</h4>
+          <h4 className="text-lg text-white mb-3">Quick Links</h4>
           <ul className="space-y-2 text-sm">
-            <li><a href="#" className="hover:text-orange-400 transition">Home</a></li>
-            <li><a href="#featured-hostels" className="hover:text-orange-400 transition">Browse Hostels</a></li>
-            <li><a href="#about" className="hover:text-orange-400 transition">About Us</a></li>
-            <li><a href="#" className="hover:text-orange-400 transition">List Your Hostel</a></li>
+            <li>
+              <HashLink smooth to="/#" className="hover:text-orange-400 transition">
+                Home
+              </HashLink>
+            </li>
+            <li>
+              <HashLink
+                smooth
+                to="/#available-hostels"
+                className="hover:text-orange-400 transition"
+              >
+                Browse Hostels
+              </HashLink>
+            </li>
+            <li>
+              <HashLink
+                smooth
+                to="/#about"
+                className="hover:text-orange-400 transition"
+              >
+                About Us
+              </HashLink>
+            </li>
+            <li>
+              <HashLink smooth to="/#" className="hover:text-orange-400 transition">
+                List Your Hostel
+              </HashLink>
+            </li>
           </ul>
         </div>
 
-        {/* Legal & Contact */}
+        {/* Support */}
         <div>
-          <h4 className="text-lg font-semibold text-white mb-3">Support</h4>
+          <h4 className="text-lg text-white mb-3">Support</h4>
           <ul className="space-y-2 text-sm">
-            <li><a href="#" className="hover:text-orange-400 transition">Contact Us</a></li>
-            <li><a href="#" className="hover:text-orange-400 transition">Terms & Conditions</a></li>
-            <li><a href="#" className="hover:text-orange-400 transition">Privacy Policy</a></li>
-            <li><a href="#faq" className="hover:text-orange-400 transition">Help & FAQs</a></li>
+            <li>
+              <HashLink smooth to="/#contact" className="hover:text-orange-400 transition">
+                Contact Us
+              </HashLink>
+            </li>
+            <li>
+              <HashLink smooth to="/#" className="hover:text-orange-400 transition">
+                Terms & Conditions
+              </HashLink>
+            </li>
+            <li>
+              <HashLink smooth to="/#" className="hover:text-orange-400 transition">
+                Privacy Policy
+              </HashLink>
+            </li>
+            <li>
+              <HashLink
+                smooth
+                to="/#faq"
+                className="hover:text-orange-400 transition"
+              >
+                Help & FAQs
+              </HashLink>
+            </li>
           </ul>
         </div>
 
