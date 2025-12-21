@@ -10,14 +10,6 @@ export default function HostelBookingCard() {
         Rent Now
       </button>
 
-      <div className="mt-6 text-sm text-gray-600">
-        <p className="text-gray-800 mb-1">
-          Landlord Contact
-        </p>
-        <p>Mr. Adekunle</p>
-        <p>0801 234 5678</p>
-      </div>
-
     </div>
   );
 }
