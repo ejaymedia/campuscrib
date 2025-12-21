@@ -75,13 +75,9 @@ function HostelDetailsNavbar() {
             Home
           </Link>
 
-          <Link
-            to="/hostels"
-            onClick={closeMenu}
-            className="hover:text-orange-600"
-          >
+          <HashLink smooth to="/#available-hostels" onClick={closeMenu} className="hover:text-orange-600">
             Browse Hostels
-          </Link>
+          </HashLink>
 
           <Link
             to="/dashboard"
