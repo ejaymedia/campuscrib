@@ -10,6 +10,7 @@ import {
   FaTimes,
 } from "react-icons/fa";
 import hostel1 from "../assets/hostel1.jpg";
+import { Link } from "react-router-dom";
 
 function AvailableHostels() {
   const allHostels = [
@@ -264,10 +265,12 @@ function AvailableHostels() {
                 <p className="mt-3 text-orange-600">
                   ₦{h.price.toLocaleString()} / year
                 </p>
-
-                <button className="mt-4 w-full py-2 bg-orange-600 text-white rounded-xl text-sm">
-                  View Details
-                </button>
+                
+                <Link to="/hostel-details">
+                  <button className="mt-4 w-full py-2 bg-orange-500 text-white rounded-xl text-sm">
+                    View Details
+                  </button>
+                </Link>
               </div>
             </div>
           ))}

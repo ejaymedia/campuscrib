@@ -3,14 +3,14 @@ import HostelGallery from "../components/hostel-details/HostelGallery";
 import HostelInfo from "../components/hostel-details/HostelInfo";
 import HostelAmenities from "../components/hostel-details/HostelAmenities";
 import HostelBookingCard from "../components/hostel-details/HostelBookingCard";
-import HostelDetailsNavbar from "../components/hostel-details/HostelDetailsNavbar";
+import LoggedInNavbar from "../components/LoggedInNavbar";
 import Footer from "../components/Footer";
 
 export default function HostelDetails() {
   return (
     <section>
       <div className="pt-20 px-4 md:px-8 max-w-7xl mx-auto">
-        <HostelDetailsNavbar />
+        <LoggedInNavbar />
 
         <HostelHeader />
 
