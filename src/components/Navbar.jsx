@@ -58,9 +58,11 @@ function Navbar() {
 
       {/* RIGHT BUTTONS */}
       <div className="hidden md:flex items-center gap-4">
+        <Link to="/register">
         <button className="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-100 transition">
           Register
         </button>
+        </Link>
 
         <Link to="/login">
         <button className="px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition">
@@ -113,12 +115,14 @@ function Navbar() {
 
           <hr />
 
+          <Link to="/register">
           <button
             onClick={closeMenu}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-100 transition"
           >
             Register
           </button>
+          </Link>
 
           <Link to="/login">
           <button

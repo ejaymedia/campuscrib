@@ -41,9 +41,11 @@ export default function HeroSection() {
         </p>
 
         <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <Link to="/register">
           <button className="px-6 py-3 border border-gray-300 text-gray-700 rounded-xl text-sm font-medium hover:bg-gray-100 transition">
             Register
           </button>
+          </Link>
 
           <Link to="/login">
           <button className="px-6 py-3 bg-orange-600 text-white rounded-xl text-sm font-medium hover:bg-orange-700 transition">
