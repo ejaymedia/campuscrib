@@ -19,7 +19,13 @@ export default function Login() {
 
         {/* LOGO */}
         <div className="flex justify-center mb-6">
-          <img src={Logo} alt="CampusCrib" className="w-40" />
+          <Link to="/">
+            <img
+              src={Logo}
+              alt="CampusCrib"
+              className="w-40 cursor-pointer"
+            />
+          </Link>
         </div>
 
         {/* TITLE */}
