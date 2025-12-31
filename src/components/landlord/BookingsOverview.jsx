@@ -1,6 +1,6 @@
 export default function BookingsOverview() {
   return (
-    <section className="bg-white border rounded-2xl p-6" id="bookings">
+    <section className="bg-white border rounded-2xl p-6 scroll-mt-28" id="bookings">
       <h2 className="text-lg text-gray-900 mb-4">
         Bookings
       </h2>

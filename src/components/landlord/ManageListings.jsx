@@ -1,6 +1,6 @@
 export default function ManageListings() {
   return (
-    <section className="bg-white border rounded-2xl p-6" id="listings">
+    <section className="bg-white border rounded-2xl p-6 scroll-mt-28" id="listings">
       <h2 className="text-lg text-gray-900 mb-4">
         Manage Listings
       </h2>
