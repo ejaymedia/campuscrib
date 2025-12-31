@@ -1,4 +1,5 @@
 import ovly from "../assets/ovly.png";
+import { Link } from "react-router-dom";
 
 export default function HeroSection() {
   return (
@@ -44,9 +45,11 @@ export default function HeroSection() {
             Register
           </button>
 
+          <Link to="/login">
           <button className="px-6 py-3 bg-orange-600 text-white rounded-xl text-sm font-medium hover:bg-orange-700 transition">
             Login
           </button>
+          </Link>
         </div>
 
       </div>

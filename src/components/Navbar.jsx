@@ -2,6 +2,7 @@ import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import { HashLink } from "react-router-hash-link";
 import Logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -61,9 +62,11 @@ function Navbar() {
           Register
         </button>
 
+        <Link to="/login">
         <button className="px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition">
           Login
         </button>
+        </Link>
       </div>
 
       {/* MOBILE MENU ICON */}
@@ -117,12 +120,14 @@ function Navbar() {
             Register
           </button>
 
+          <Link to="/login">
           <button
             onClick={closeMenu}
             className="w-full px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition"
           >
             Login
           </button>
+          </Link>
         </div>
       )}
     </nav>
